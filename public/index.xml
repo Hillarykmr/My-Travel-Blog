@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Mainroad</title>
+    <link>//localhost:55996/</link>
+    <description>Recent content on Mainroad</description>
+    <generator>Hugo 0.125.0</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 15 Oct 2024 14:45:00 +0000</lastBuildDate>
+    <atom:link href="//localhost:55996/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Media Kit</title>
+      <link>//localhost:55996/media-kit/</link>
+      <pubDate>Tue, 15 Oct 2024 14:45:00 +0000</pubDate>
+      <guid>//localhost:55996/media-kit/</guid>
+      <description>Hillary Rogers - Travel Content Creator About Me Travel enthusiast specializing in African safaris and cultural immersion. I create engaging visual and written content that showcases destinations to inspire wanderlust.&#xA;Platform Reach Pinterest Followers: [Your Follower Count] Monthly Viewers: [Your Monthly Viewers] Engagement Rate: [Your Engagement Rate]% Niche: Travel Inspiration, African Safaris, Adventure Travel Travel Blog Domain: [Your Netlify URL] Content: Detailed travel guides, cultural experiences, hotel features Audience: Travel enthusiasts, adventure seekers, luxury travelers Collaboration Offer I offer comprehensive content creation packages in exchange for press stays:</description>
+    </item>
+    <item>
+      <title>Why Uganda Should Be On Your Dream Winter Destination Bucketlist</title>
+      <link>//localhost:55996/posts/why-uganda-is-my-dream-winter-destination/</link>
+      <pubDate>Mon, 15 Jan 2024 10:30:00 +0000</pubDate>
+      <guid>//localhost:55996/posts/why-uganda-is-my-dream-winter-destination/</guid>
+      <description>Discovering the Pearl of Africa This winter, I&amp;rsquo;m embarking on an unforgettable journey to Uganda - the Pearl of Africa! From tracking mountain gorillas to exploring the source of the Nile, this country offers incredible adventures.&#xA;What I&amp;rsquo;m Most Excited For: Gorilla Trekking in Bwindi Impenetrable Forest Wildlife Safaris in Queen Elizabeth National Park Cultural Experiences with local communities Pinterest-Worthy Landscapes at Lake Bunyonyi Stay tuned as I prepare for this amazing trip and leverage my Pinterest platform to showcase Uganda&amp;rsquo;s beauty to my engaged audience!</description>
+    </item>
+    <item>
+      <title>About Me</title>
+      <link>//localhost:55996/about/</link>
+      <pubDate>Mon, 15 Jan 2024 10:00:00 +0000</pubDate>
+      <guid>//localhost:55996/about/</guid>
+      <description>Hello! I&amp;rsquo;m Hillary Rogers, a travel enthusiast with a passion for finding hidden gems. I share my journeys through detailed blog posts and vibrant Pinterest content to inspire your next adventure.&#xA;What I Do Create engaging travel content for Pinterest Share authentic cultural experiences Document sustainable travel practices Collaborate with hotels and tourism boards Follow my journey as I explore new cities and more!</description>
+    </item>
+  </channel>
+</rss>

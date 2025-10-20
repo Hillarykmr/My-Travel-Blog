@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Mainroad</title>
+    <link>/tags/</link>
+    <description>Recent content in Tags on Mainroad</description>
+    <generator>Hugo 0.125.0</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 15 Jan 2024 10:30:00 +0000</lastBuildDate>
+    <atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Gorilla-Trekking</title>
+      <link>/tags/gorilla-trekking/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/tags/gorilla-trekking/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Luxury</title>
+      <link>/tags/luxury/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/tags/luxury/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Safari</title>
+      <link>/tags/safari/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/tags/safari/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Uganda</title>
+      <link>/tags/uganda/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/tags/uganda/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>
