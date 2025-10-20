@@ -1,0 +1,19 @@
+# Create netlify.toml configuration file
+cat > netlify.toml << 'EOF'
+[build]
+  publish = "public"
+  command = "hugo --gc --minify"
+
+[build.environment]
+  HUGO_VERSION = "0.125.0"
+  HUGO_ENABLEGITINFO = "true"
+
+[context.production.environment]
+  HUGO_ENV = "production"
+
+[context.deploy-preview.environment]
+  HUGO_ENV = "production"
+
+[context.branch-deploy.environment]
+  HUGO_ENV = "production"
+EOF
