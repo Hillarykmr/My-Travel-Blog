@@ -1,9 +1,0 @@
-[submodule "themes/paper"]
-	path = themes/paper
-	url = https://github.com/nanxiaobei/hugo-paper.git
-[submodule "themes/mainroad"]
-	path = themes/mainroad
-	url = https://github.com/Vimux/Mainroad.git
-[submodule "themes/stack"]
-	path = themes/stack
-	url = https://github.com/CaiJimmy/hugo-theme-stack
