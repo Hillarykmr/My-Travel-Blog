@@ -196,11 +196,13 @@
         border-radius: 2px;
         overflow: hidden;
         box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
-        transition: transform 0.3s ease;
+        transition: all 0.3s ease;
+        cursor: pointer;
       }
 
       .hotel-card:hover {
         transform: translateY(-10px);
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
       }
 
       .hotel-img {
@@ -623,8 +625,40 @@
       <div class="container">
         <h2 class="section-title">Curated Luxury Stays</h2>
         <div class="hotels-grid">
+          <!-- Chicago Hotel -->
+          <div
+            class="hotel-card"
+            onclick="location.href='chicago-weekend.html'"
+            style="cursor: pointer"
+          >
+            <div class="hotel-img">
+              <img src="Chicago1, hotel.jpeg" alt="Hyatt Regency Chicago" />
+              <div class="hotel-price">$$$</div>
+            </div>
+            <div class="hotel-content">
+              <span class="hotel-location">CHICAGO, USA</span>
+              <h3 class="hotel-title">Hyatt Regency Chicago</h3>
+              <p class="hotel-excerpt">
+                Luxury in the heart of downtown with stunning river views.
+                Perfect for weekend getaways and business travel.
+              </p>
+              <div class="hotel-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+              <a href="chicago-weekend.html" class="btn">View Weekend Guide</a>
+            </div>
+          </div>
+
           <!-- Hotel 1 -->
-          <div class="hotel-card">
+          <div
+            class="hotel-card"
+            onclick="location.href='hotel-aman-tokyo.html'"
+            style="cursor: pointer"
+          >
             <div class="hotel-img">
               <img
                 src="https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
@@ -646,12 +680,16 @@
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
               </div>
-              <a href="#" class="btn">View Details</a>
+              <a href="hotel-aman-tokyo.html" class="btn">View Details</a>
             </div>
           </div>
 
           <!-- Hotel 2 -->
-          <div class="hotel-card">
+          <div
+            class="hotel-card"
+            onclick="location.href='hotel-maria-cristina.html'"
+            style="cursor: pointer"
+          >
             <div class="hotel-img">
               <img
                 src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
@@ -673,12 +711,16 @@
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star-half-alt"></i>
               </div>
-              <a href="#" class="btn">View Details</a>
+              <a href="hotel-maria-cristina.html" class="btn">View Details</a>
             </div>
           </div>
 
           <!-- Hotel 3 -->
-          <div class="hotel-card">
+          <div
+            class="hotel-card"
+            onclick="location.href='hotel-ritz-carlton.html'"
+            style="cursor: pointer"
+          >
             <div class="hotel-img">
               <img
                 src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1180&q=80"
@@ -700,7 +742,7 @@
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
               </div>
-              <a href="#" class="btn">View Details</a>
+              <a href="hotel-ritz-carlton.html" class="btn">View Details</a>
             </div>
           </div>
         </div>
@@ -957,11 +999,11 @@
           <div class="footer-column">
             <h3>Destinations</h3>
             <ul class="footer-links">
-              <li><a href="#">Europe</a></li>
-              <li><a href="#">Asia</a></li>
-              <li><a href="#">North America</a></li>
-              <li><a href="#">Caribbean</a></li>
-              <li><a href="#">Middle East</a></li>
+              <li><a href="chicago-weekend.html">Chicago</a></li>
+              <li><a href="#">New York</a></li>
+              <li><a href="#">Paris</a></li>
+              <li><a href="#">Tokyo</a></li>
+              <li><a href="#">London</a></li>
             </ul>
           </div>
           <div class="footer-column">
