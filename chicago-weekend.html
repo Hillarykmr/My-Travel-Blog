@@ -9,18 +9,19 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Inter:wght@300;400;500&display=swap"
       rel="stylesheet"
     />
     <style>
-      /* Modern Aesthetic Styles */
+      /* Quiet Luxury Color Palette */
       :root {
-        --white: #ffffff;
-        --black: #000000;
-        --light-gray: #f8f8f8;
-        --medium-gray: #e5e5e5;
-        --dark-gray: #333333;
-        --accent: #2c2c2c;
+        --ivory: #f9f7f2;
+        --stone: #e8e5de;
+        --taupe: #d1c8b8;
+        --charcoal: #3c3c3c;
+        --sand: #c4b6a0;
+        --bronze: #a87d43;
+        --slate: #7a7a7a;
       }
 
       * {
@@ -31,153 +32,269 @@
 
       body {
         font-family: "Inter", sans-serif;
-        line-height: 1.6;
-        color: var(--black);
-        background-color: var(--white);
+        color: var(--charcoal);
+        line-height: 1.7;
+        background-color: var(--ivory);
         font-weight: 400;
       }
 
-      a {
-        text-decoration: none;
-        color: inherit;
-      }
-
-      img {
-        max-width: 100%;
-        height: auto;
-      }
-
-      .container {
-        width: 90%;
-        max-width: 1200px;
-        margin: 0 auto;
-      }
-
-      .btn {
-        display: inline-block;
-        padding: 14px 28px;
-        background-color: var(--black);
-        color: var(--white);
-        border: 1px solid var(--black);
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        font-family: "Cormorant Garamond", serif;
         font-weight: 500;
-        font-size: 0.9rem;
+        margin-bottom: 1.5rem;
         letter-spacing: 0.5px;
-        transition: all 0.3s ease;
-        cursor: pointer;
       }
 
-      .btn:hover {
-        background-color: var(--white);
-        color: var(--black);
-      }
-
-      /* Header */
-      .modern-header {
-        background-color: var(--white);
-        border-bottom: 1px solid var(--medium-gray);
+      /* Header Styles */
+      header {
+        background-color: var(--ivory);
+        border-bottom: 1px solid var(--stone);
         position: sticky;
         top: 0;
-        z-index: 1000;
+        z-index: 100;
+        padding: 1.2rem 0;
       }
 
-      .navbar {
+      .header-container {
+        max-width: 1200px;
+        margin: 0 auto;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 20px 0;
+        padding: 0 2rem;
       }
 
       .logo {
-        font-size: 1.5rem;
+        font-family: "Cormorant Garamond", serif;
         font-weight: 600;
-        letter-spacing: -0.5px;
+        font-size: 1.8rem;
+        color: var(--charcoal);
+        text-decoration: none;
+        letter-spacing: 1px;
       }
 
-      .nav-links {
+      nav ul {
         display: flex;
         list-style: none;
-        gap: 30px;
       }
 
-      .nav-links a {
+      nav ul li {
+        margin-left: 2.5rem;
+      }
+
+      nav ul li a {
+        text-decoration: none;
+        color: var(--charcoal);
         font-weight: 400;
         font-size: 0.9rem;
-        transition: color 0.3s ease;
+        letter-spacing: 0.5px;
+        transition: color 0.3s;
       }
 
-      .nav-links a:hover {
-        color: #666;
+      nav ul li a:hover {
+        color: var(--bronze);
       }
 
-      /* Blog Hero */
-      .blog-hero {
-        padding: 80px 0 40px;
-        text-align: center;
-      }
-
-      .blog-title {
-        font-size: 3rem;
-        font-weight: 600;
-        margin-bottom: 20px;
-        letter-spacing: -1px;
-      }
-
-      .blog-subtitle {
-        font-size: 1.2rem;
-        color: #666;
-        margin-bottom: 30px;
-        font-weight: 400;
-      }
-
-      .blog-meta {
+      /* Hero Section */
+      .hero {
+        height: 85vh;
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.2),
+            rgba(0, 0, 0, 0.2)
+          ),
+          url("Chicago1.jpeg");
+        background-size: cover;
+        background-position: center;
         display: flex;
+        align-items: center;
         justify-content: center;
-        gap: 30px;
-        font-size: 0.9rem;
-        color: #888;
+        text-align: center;
+        color: white;
+        padding: 0 2rem;
+      }
+
+      .hero-content h1 {
+        font-size: 4rem;
+        margin-bottom: 1.5rem;
+        text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+        font-weight: 500;
+        letter-spacing: 1px;
+      }
+
+      .hero-content p {
+        font-size: 1.3rem;
+        max-width: 700px;
+        margin: 0 auto 2rem;
+        font-weight: 300;
+        letter-spacing: 0.5px;
+      }
+
+      .divider {
+        width: 80px;
+        height: 1px;
+        background-color: white;
+        margin: 0 auto 2rem;
       }
 
       /* Blog Content */
-      .blog-content {
-        max-width: 800px;
-        margin: 0 auto;
-        padding: 0 20px 80px;
+      .blog-container {
+        max-width: 900px;
+        margin: 5rem auto;
+        padding: 0 2rem;
       }
 
-      .content-section {
-        margin-bottom: 60px;
-      }
-
-      .section-title {
-        font-size: 1.8rem;
-        font-weight: 600;
-        margin-bottom: 25px;
-        letter-spacing: -0.5px;
-      }
-
-      .blog-text {
-        font-size: 1.1rem;
-        line-height: 1.8;
-        margin-bottom: 25px;
-        color: #333;
-      }
-
-      .featured-image {
-        margin: 40px 0;
+      .blog-intro {
+        margin-bottom: 4rem;
         text-align: center;
       }
 
-      .featured-image img {
-        max-width: 100%;
-        height: 500px;
-        object-fit: cover;
+      .blog-intro p {
+        font-size: 1.2rem;
+        margin-bottom: 2rem;
+        color: var(--slate);
+      }
+
+      .image-section {
+        margin: 4rem 0;
+        text-align: center;
+      }
+
+      .image-section img {
+        width: 100%;
+        max-width: 800px;
+        height: auto;
+        border-radius: 2px;
       }
 
       .image-caption {
-        font-size: 0.9rem;
-        color: #666;
-        margin-top: 10px;
+        margin-top: 1rem;
         font-style: italic;
+        color: var(--slate);
+        font-size: 0.9rem;
+      }
+
+      /* Quiet Luxury Brand Highlight */
+      .brand-highlight {
+        background-color: var(--stone);
+        padding: 2.5rem;
+        margin: 3rem 0;
+        border-radius: 2px;
+        border-left: 3px solid var(--bronze);
+      }
+
+      .brand-highlight h4 {
+        font-family: "Cormorant Garamond", serif;
+        font-size: 1.4rem;
+        margin-bottom: 1rem;
+        color: var(--charcoal);
+      }
+
+      .brand-highlight p {
+        color: var(--slate);
+        margin-bottom: 1rem;
+      }
+
+      /* Expandable Sections */
+      .expandable-section {
+        margin: 4rem 0;
+        border: 1px solid var(--stone);
+        border-radius: 2px;
+        overflow: hidden;
+      }
+
+      .expandable-header {
+        background-color: var(--ivory);
+        padding: 2rem;
+        cursor: pointer;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        transition: background-color 0.3s;
+        border-bottom: 1px solid transparent;
+      }
+
+      .expandable-header:hover {
+        background-color: var(--stone);
+      }
+
+      .expandable-header.active {
+        border-bottom: 1px solid var(--stone);
+      }
+
+      .expandable-header h3 {
+        margin: 0;
+        color: var(--charcoal);
+        font-size: 1.5rem;
+      }
+
+      .expandable-content {
+        padding: 0 2rem;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.5s ease, padding 0.5s ease;
+      }
+
+      .expandable-content.active {
+        padding: 2rem;
+        max-height: 2000px;
+      }
+
+      .expandable-content ul {
+        margin-left: 1.5rem;
+        margin-bottom: 1.5rem;
+      }
+
+      .expandable-content li {
+        margin-bottom: 0.8rem;
+        position: relative;
+        padding-left: 1.5rem;
+      }
+
+      .expandable-content li:before {
+        content: "—";
+        position: absolute;
+        left: 0;
+        color: var(--bronze);
+      }
+
+      .brand-link {
+        color: var(--bronze);
+        text-decoration: none;
+        transition: color 0.3s;
+      }
+
+      .brand-link:hover {
+        color: var(--charcoal);
+      }
+
+      /* Quiet Luxury Grid */
+      .luxury-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 2rem;
+        margin: 2rem 0;
+      }
+
+      .luxury-item {
+        padding: 1.5rem;
+        border-bottom: 1px solid var(--stone);
+      }
+
+      .luxury-item h4 {
+        font-family: "Cormorant Garamond", serif;
+        font-size: 1.3rem;
+        margin-bottom: 0.5rem;
+        color: var(--charcoal);
+      }
+
+      .luxury-item p {
+        color: var(--slate);
+        font-size: 0.95rem;
       }
 
       /* Image Grid */
@@ -191,6 +308,7 @@
       .grid-image {
         height: 300px;
         overflow: hidden;
+        border-radius: 2px;
       }
 
       .grid-image img {
@@ -204,168 +322,132 @@
         transform: scale(1.05);
       }
 
-      /* Packing List */
-      .packing-section {
-        background-color: var(--light-gray);
-        padding: 40px;
-        margin: 50px 0;
-        border-radius: 8px;
-      }
-
-      .packing-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-        gap: 30px;
-        margin-top: 30px;
-      }
-
-      .packing-category h4 {
-        font-size: 1.2rem;
-        font-weight: 600;
-        margin-bottom: 15px;
-        color: var(--black);
-      }
-
-      .packing-list {
-        list-style: none;
-      }
-
-      .packing-list li {
-        margin-bottom: 8px;
-        padding-left: 20px;
-        position: relative;
-      }
-
-      .packing-list li:before {
-        content: "•";
-        color: var(--black);
-        position: absolute;
-        left: 0;
-      }
-
-      .brand-link {
-        color: #666;
-        text-decoration: underline;
-        transition: color 0.3s ease;
-      }
-
-      .brand-link:hover {
-        color: var(--black);
-      }
-
-      /* Hotel Feature */
-      .hotel-feature {
-        border: 1px solid var(--medium-gray);
-        padding: 30px;
-        margin: 40px 0;
-      }
-
-      .hotel-name {
-        font-size: 1.4rem;
-        font-weight: 600;
-        margin-bottom: 15px;
-      }
-
-      .hotel-details {
-        color: #666;
-        margin-bottom: 15px;
-      }
-
       /* Footer */
-      .modern-footer {
-        background-color: var(--black);
-        color: var(--white);
-        padding: 60px 0 30px;
+      footer {
+        background-color: var(--charcoal);
+        color: var(--ivory);
+        padding: 4rem 0 2rem;
+        margin-top: 5rem;
       }
 
-      .footer-content {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-        gap: 40px;
-        margin-bottom: 40px;
+      .footer-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 2rem;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
       }
 
-      .footer-column h3 {
-        font-size: 1.1rem;
-        font-weight: 600;
-        margin-bottom: 20px;
-        letter-spacing: 0.5px;
+      .footer-section {
+        flex: 1;
+        min-width: 250px;
+        margin-bottom: 2rem;
       }
 
-      .footer-links {
+      .footer-section h3 {
+        color: var(--ivory);
+        margin-bottom: 1.5rem;
+        font-size: 1.2rem;
+        font-family: "Cormorant Garamond", serif;
+      }
+
+      .footer-section ul {
         list-style: none;
       }
 
-      .footer-links li {
-        margin-bottom: 10px;
+      .footer-section ul li {
+        margin-bottom: 0.8rem;
       }
 
-      .footer-links a {
+      .footer-section ul li a {
         color: #ccc;
-        transition: color 0.3s ease;
+        text-decoration: none;
+        transition: color 0.3s;
         font-size: 0.9rem;
       }
 
-      .footer-links a:hover {
-        color: var(--white);
+      .footer-section ul li a:hover {
+        color: var(--taupe);
       }
 
-      .social-links {
+      .social-icons {
         display: flex;
-        gap: 15px;
-        margin-top: 20px;
+        gap: 1rem;
       }
 
-      .social-links a {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 40px;
-        height: 40px;
-        background-color: rgba(255, 255, 255, 0.1);
-        border-radius: 2px;
-        transition: all 0.3s ease;
+      .social-icons a {
+        color: var(--ivory);
+        font-size: 1.2rem;
+        transition: color 0.3s;
       }
 
-      .social-links a:hover {
-        background-color: var(--white);
-        color: var(--black);
+      .social-icons a:hover {
+        color: var(--taupe);
       }
 
       .copyright {
         text-align: center;
-        padding-top: 30px;
+        padding-top: 3rem;
         border-top: 1px solid #444;
-        font-size: 0.8rem;
+        margin-top: 2rem;
         color: #999;
+        font-size: 0.8rem;
+        width: 100%;
       }
 
+      /* Responsive Design */
       @media (max-width: 768px) {
-        .blog-title {
-          font-size: 2.2rem;
+        .header-container {
+          flex-direction: column;
+          padding: 1rem;
+        }
+
+        nav ul {
+          margin-top: 1.5rem;
+        }
+
+        nav ul li {
+          margin-left: 1.5rem;
+          margin-right: 1.5rem;
+        }
+
+        .hero-content h1 {
+          font-size: 2.8rem;
+        }
+
+        .footer-container {
+          flex-direction: column;
+        }
+
+        .luxury-grid {
+          grid-template-columns: 1fr;
         }
 
         .image-grid {
           grid-template-columns: 1fr;
         }
+      }
 
-        .nav-links {
-          display: none;
-        }
-
-        .packing-grid {
-          grid-template-columns: 1fr;
-        }
+      .quote {
+        font-family: "Cormorant Garamond", serif;
+        font-size: 1.4rem;
+        text-align: center;
+        margin: 3rem 0;
+        padding: 2rem;
+        color: var(--slate);
+        font-style: italic;
+        border-top: 1px solid var(--stone);
+        border-bottom: 1px solid var(--stone);
       }
     </style>
   </head>
   <body>
-    <!-- Modern Header -->
-    <header class="modern-header">
-      <div class="container">
-        <nav class="navbar">
-          <a href="index.html" class="logo">LUXE & WANDER</a>
-          <ul class="nav-links">
+    <header>
+      <div class="header-container">
+        <a href="index.html" class="logo">LUXE & WANDER</a>
+        <nav>
+          <ul>
             <li><a href="index.html">HOME</a></li>
             <li><a href="index.html#hotels">LUXURY STAYS</a></li>
             <li><a href="index.html#guides">CITY STAYS</a></li>
@@ -376,40 +458,55 @@
       </div>
     </header>
 
-    <!-- Blog Hero -->
-    <section class="blog-hero">
-      <div class="container">
-        <h1 class="blog-title">Chicago Weekend Getaway</h1>
-        <p class="blog-subtitle">
-          48 Hours of Urban Luxury & Architectural Wonders
-        </p>
-        <div class="blog-meta">
-          <span>Weekend Escape</span>
-          <span>Luxury Travel</span>
-          <span>City Guide</span>
-        </div>
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Chicago Weekend Getaway</h1>
+        <div class="divider"></div>
+        <p>48 Hours of Understated Luxury & Architectural Splendor</p>
       </div>
     </section>
 
-    <!-- Blog Content -->
-    <div class="blog-content">
-      <!-- Introduction -->
-      <section class="content-section">
-        <p class="blog-text">
-          As a young professional constantly juggling work commitments, I've
-          mastered the art of the weekend getaway. Chicago emerged as the
-          perfect destination—a vibrant city that offers world-class dining,
-          stunning architecture, and cultural experiences, all perfectly
-          packaged for a luxurious 48-hour escape.
+    <div class="blog-container">
+      <div class="blog-intro">
+        <p>
+          There's an art to the weekend getaway—curating experiences that feel
+          both effortless and exceptional. Chicago, with its bold architecture
+          and refined culinary scene, provides the perfect canvas for those who
+          appreciate beauty in the details and luxury in the understated.
         </p>
 
-        <div class="featured-image">
-          <img src="Chicago1, hotel.jpeg" alt="Hyatt Regency Chicago Hotel" />
-          <p class="image-caption">
-            The stunning lobby of Hyatt Regency Chicago
-          </p>
-        </div>
-      </section>
+        <p>
+          This guide is for the discerning traveler who values quality over
+          labels, experiences over extravagance, and the quiet confidence that
+          comes from impeccable taste.
+        </p>
+      </div>
+
+      <div class="image-section">
+        <img src="Chicago11.jpeg" alt="Downtown Chicago skyline" />
+        <p class="image-caption">
+          The magnificent Chicago skyline at golden hour
+        </p>
+      </div>
+
+      <p>
+        My approach to travel mirrors my approach to style: intentional,
+        curated, and focused on quality. Chicago's architectural grandeur and
+        cultural depth offer the perfect backdrop for a weekend of sophisticated
+        exploration without ostentation.
+      </p>
+
+      <p>
+        From the serene Art Institute to the innovative dining establishments,
+        every moment felt like an exercise in curated living—where the focus
+        remains on the experience itself rather than its display.
+      </p>
+
+      <div class="quote">
+        "Quiet luxury isn't about what you wear, but how you move through the
+        world—with intention, discernment, and an appreciation for the
+        exceptional in the everyday."
+      </div>
 
       <!-- Hotel Section -->
       <section class="content-section">
@@ -417,9 +514,9 @@
           Luxury Accommodation: Hyatt Regency Chicago
         </h2>
 
-        <div class="hotel-feature">
-          <h3 class="hotel-name">Hyatt Regency Chicago</h3>
-          <p class="hotel-details">
+        <div class="brand-highlight">
+          <h4>Hyatt Regency Chicago</h4>
+          <p>
             <strong>Location:</strong> Heart of downtown, steps from the
             Riverwalk<br />
             <strong>Perfect For:</strong> Professionals seeking convenience and
@@ -427,155 +524,218 @@
             <strong>Highlight:</strong> Stunning city views and exceptional
             service
           </p>
-          <p class="blog-text">
+          <p>
             Nestled in the heart of downtown, the Hyatt Regency offered the
             perfect base for our urban adventure. Waking up to panoramic views
-            of the Chicago River and city skyline set the tone for each day. The
-            central location meant we could walk to most attractions, maximizing
-            our precious weekend hours.
+            of the Chicago River and city skyline set the tone for each day.
           </p>
         </div>
 
         <div class="image-grid">
           <div class="grid-image">
-            <img src="Chicago9, lounge.jpeg" alt="Hotel Lounge" />
+            <img src="Chicago9.jpeg" alt="Hotel Lounge" />
           </div>
           <div class="grid-image">
-            <img src="Chicago10, lounge.jpeg" alt="City Views" />
+            <img src="Chicago10.jpeg" alt="City Views from Hotel" />
           </div>
         </div>
       </section>
 
       <!-- Dining Section -->
       <section class="content-section">
-        <h2 class="section-title">Culinary Excellence: Nisos Prime</h2>
+        <h2 class="section-title">Culinary Excellence</h2>
 
-        <p class="blog-text">
+        <p>
           The importance of reservations cannot be overstated for a successful
           weekend getaway. We secured our Saturday night dinner at Nisos Prime
           two weeks in advance, and it was worth every moment of anticipation.
-          The Mediterranean-inspired steakhouse delivered an unforgettable
-          dining experience with impeccable service and flavors that celebrated
-          both land and sea.
         </p>
 
         <div class="image-grid">
           <div class="grid-image">
-            <img src="Chicago6, nisos prime.jpeg" alt="Nisos Prime Dining" />
+            <img src="Chicago6.jpeg" alt="Nisos Prime Dining" />
           </div>
           <div class="grid-image">
-            <img src="Chicago7, nisos prime.jpeg" alt="Restaurant Ambiance" />
+            <img src="Chicago7.jpeg" alt="Restaurant Ambiance" />
           </div>
         </div>
       </section>
 
-      <!-- Packing List Section -->
-      <section class="content-section">
-        <h2 class="section-title">The Perfect Weekend Packing List</h2>
+      <div class="expandable-section">
+        <div class="expandable-header" onclick="toggleExpandable('essentials')">
+          <h3>Weekend Getaway Essentials</h3>
+          <i class="fas fa-chevron-down"></i>
+        </div>
+        <div class="expandable-content" id="essentials">
+          <p>
+            Packing for a sophisticated weekend requires a curated
+            approach—selecting pieces that work harmoniously while maintaining
+            the highest standards of quality and comfort.
+          </p>
 
-        <p class="blog-text">
-          Packing smart is essential for a successful weekend getaway. Here's
-          exactly what I brought for my Chicago adventure—perfectly balanced for
-          both comfort and style.
-        </p>
-
-        <div class="packing-section">
-          <div class="packing-grid">
-            <!-- Skincare -->
-            <div class="packing-category">
-              <h4>Skincare Essentials</h4>
-              <ul class="packing-list">
-                <li>Augustinus Bader The Cream - perfect travel size</li>
-                <li>Supergoop! Glowscreen SPF 40 - tinted sunscreen</li>
-                <li>Travel-sized micellar water</li>
-                <li>Hydrating face mist</li>
-                <li>Under eye patches for morning refresh</li>
-              </ul>
+          <div class="luxury-grid">
+            <div class="luxury-item">
+              <h4>The Row</h4>
+              <p>
+                For the ultimate in minimalist luxury, their slouchy trousers
+                and perfectly weighted t-shirts are worth the investment. The
+                cut and fabric quality is immediately apparent to those who
+                understand craftsmanship.
+              </p>
             </div>
-
-            <!-- Shoes -->
-            <div class="packing-category">
-              <h4>Footwear</h4>
-              <ul class="packing-list">
-                <li>Veja sneakers - perfect for walking</li>
-                <li>Aquazzura boots - chic and comfortable</li>
-                <li>Simple sandals for evening outfits</li>
-              </ul>
+            <div class="luxury-item">
+              <h4>Khaite</h4>
+              <p>
+                Modern American luxury with exceptional cashmere and leather
+                pieces. Their jeans are particularly noteworthy—the perfect fit
+                without any obvious branding.
+              </p>
             </div>
-
-            <!-- Clothing -->
-            <div class="packing-category">
-              <h4>Clothing</h4>
-              <ul class="packing-list">
-                <li>2 daytime outfits per day (mix of warm & cool)</li>
-                <li>Party dresses for evening outings</li>
-                <li>Dinner dresses for upscale restaurants</li>
-                <li>
-                  <a
-                    href="https://innovaredenim.com/collections/best-sellers"
-                    class="brand-link"
-                    target="_blank"
-                    >Innova Red Denim</a
-                  >
-                  - perfect travel jeans
-                </li>
-                <li>Versatile blazers and jackets</li>
-              </ul>
+            <div class="luxury-item">
+              <h4>Bottega Veneta</h4>
+              <p>
+                The intrecciato weave speaks volumes without a logo in sight.
+                Their leather goods and shoes represent the pinnacle of
+                understated Italian craftsmanship.
+              </p>
             </div>
-
-            <!-- Accessories & Makeup -->
-            <div class="packing-category">
-              <h4>Accessories & Makeup</h4>
-              <ul class="packing-list">
-                <li>Summer Fridays Lip Butter Balm - essential!</li>
-                <li>Light makeup routine: tinted SPF, mascara, blush</li>
-                <li>Versatile sun hat</li>
-                <li>Chic sunglasses</li>
-                <li>Crossbody purse for daytime</li>
-                <li>Evening clutch</li>
-              </ul>
+            <div class="luxury-item">
+              <h4>Totême</h4>
+              <p>
+                Scandinavian minimalism at its finest. Their signature coats and
+                separates create a cohesive, sophisticated travel wardrobe with
+                impeccable silhouettes.
+              </p>
             </div>
           </div>
         </div>
-      </section>
+      </div>
 
-      <!-- Exploration Section -->
+      <div class="expandable-section">
+        <div class="expandable-header" onclick="toggleExpandable('skincare')">
+          <h3>Skincare & Beauty</h3>
+          <i class="fas fa-chevron-down"></i>
+        </div>
+        <div class="expandable-content" id="skincare">
+          <p>
+            Travel skincare should be effective, multi-functional, and packaged
+            with the same attention to aesthetics as the rest of your beauty
+            routine.
+          </p>
+
+          <h4>Quiet Luxury Beauty Brands</h4>
+          <ul>
+            <li>
+              <strong>Augustinus Bader</strong> - The Rich Cream is a cult
+              favorite for a reason, providing all-in-one skincare in
+              travel-friendly sizes
+            </li>
+            <li>
+              <strong>La Mer</strong> - Their travel-sized The Moisturizing Soft
+              Cream delivers intense hydration without heaviness
+            </li>
+            <li>
+              <strong>Susanne Kaufmann</strong> - Austrian organic skincare with
+              elegant, effective formulations in beautiful packaging
+            </li>
+            <li>
+              <strong>Victoria Beckham Beauty</strong> - The perfect tinted
+              moisturizer and subtle eye tints for a polished but natural look
+            </li>
+          </ul>
+
+          <div class="brand-highlight">
+            <h4>Beauty Philosophy</h4>
+            <p>
+              The goal is healthy, glowing skin that looks naturally
+              beautiful—not heavily made up. A perfect tinted sunscreen,
+              well-groomed brows, and a hydrating lip balm are the foundation of
+              this approach.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="expandable-section">
+        <div class="expandable-header" onclick="toggleExpandable('footwear')">
+          <h3>Footwear</h3>
+          <i class="fas fa-chevron-down"></i>
+        </div>
+        <div class="expandable-content" id="footwear">
+          <p>
+            The right shoes should combine comfort with impeccable
+            style—beautifully crafted pieces that support a day of exploration
+            while maintaining elegance.
+          </p>
+
+          <div class="luxury-grid">
+            <div class="luxury-item">
+              <h4>Walking Shoes</h4>
+              <p>
+                <strong>Manu Atelier</strong> - Their leather sneakers are
+                fashion-forward yet incredibly comfortable, with no obvious
+                branding
+              </p>
+              <p>
+                <strong>Ancient Greek Sandals</strong> - Handmade in Greece,
+                these sandals mold to your feet while maintaining an artistic,
+                minimalist aesthetic
+              </p>
+            </div>
+            <div class="luxury-item">
+              <h4>Evening & Style</h4>
+              <p>
+                <strong>Hereu</strong> - Spanish craftsmanship meets timeless
+                design in their leather boots and shoes
+              </p>
+              <p>
+                <strong>St. Agni</strong> - Australian minimalist footwear that
+                pairs beautifully with both daytime and evening looks
+              </p>
+            </div>
+          </div>
+
+          <p>
+            The common thread among these brands is exceptional leather quality,
+            thoughtful design, and complete absence of loud branding—letting the
+            craftsmanship speak for itself.
+          </p>
+        </div>
+      </div>
+
+      <!-- Additional Chicago Content -->
       <section class="content-section">
         <h2 class="section-title">Exploring the Windy City</h2>
 
-        <p class="blog-text">
+        <p>
           What makes Chicago ideal for busy professionals? The city's compact
           downtown core means you can experience world-class architecture, art,
-          and dining without wasting precious time in transit. We arrived Friday
-          evening and by Sunday afternoon had experienced the essence of
-          Chicago—from morning walks along the Riverwalk to evening cocktails
-          with skyline views.
+          and dining without wasting precious time in transit.
         </p>
 
-        <div class="featured-image">
-          <img src="Chicago11,downtown.jpeg" alt="Downtown Chicago" />
-          <p class="image-caption">
-            Stunning architecture along the Chicago Riverwalk
-          </p>
+        <div class="image-grid">
+          <div class="grid-image">
+            <img src="Chicago2.jpeg" alt="Chicago Brunch" />
+          </div>
+          <div class="grid-image">
+            <img src="IMG_7917.jpeg" alt="City Exploration" />
+          </div>
         </div>
 
-        <p class="blog-text">
+        <p>
           The key to a successful weekend getaway is strategic planning paired
           with luxurious spontaneity. While we had our essential reservations
           locked in, we left room for unexpected discoveries—a hidden speakeasy,
           an impromptu architecture tour, or simply enjoying a perfect espresso
           at a local café.
         </p>
-
-        <div class="image-grid">
-          <div class="grid-image">
-            <img src="Chicago2, brunch.jpeg" alt="Chicago Brunch" />
-          </div>
-          <div class="grid-image">
-            <img src="Chicago12, downtown.jpeg" alt="City Exploration" />
-          </div>
-        </div>
       </section>
+
+      <div class="quote">
+        "The luxury of the future will not be loud logos, but quiet
+        confidence—in our choices, our style, and how we move through the
+        world."
+      </div>
 
       <!-- Back to Home -->
       <div style="text-align: center; margin-top: 60px">
@@ -583,61 +743,71 @@
       </div>
     </div>
 
-    <!-- Modern Footer -->
-    <footer class="modern-footer">
-      <div class="container">
-        <div class="footer-content">
-          <div class="footer-column">
-            <h3>LUXE & WANDER</h3>
-            <p style="color: #ccc; font-size: 0.9rem; line-height: 1.6">
-              Elevated travel for the modern professional woman. Because you can
-              have both—a thriving career and unforgettable adventures.
-            </p>
-            <div class="social-links">
-              <a href="#"><i class="fab fa-instagram"></i></a>
-              <a href="#"><i class="fab fa-pinterest"></i></a>
-              <a href="#"><i class="fab fa-tiktok"></i></a>
-              <a href="#"><i class="fab fa-linkedin-in"></i></a>
-            </div>
-          </div>
-          <div class="footer-column">
-            <h3>EXPLORE</h3>
-            <ul class="footer-links">
-              <li><a href="index.html#hotels">Luxury Stays</a></li>
-              <li><a href="index.html#guides">City Stays</a></li>
-              <li><a href="index.html#travel-tips">Travel Tips</a></li>
-              <li><a href="index.html#brands">Luxe Brands</a></li>
-              <li><a href="index.html#about">About</a></li>
-            </ul>
-          </div>
-          <div class="footer-column">
-            <h3>DESTINATIONS</h3>
-            <ul class="footer-links">
-              <li><a href="chicago-weekend.html">Chicago</a></li>
-              <li><a href="#">New York</a></li>
-              <li><a href="#">Paris</a></li>
-              <li><a href="#">Tokyo</a></li>
-              <li><a href="#">London</a></li>
-            </ul>
-          </div>
-          <div class="footer-column">
-            <h3>CONTACT</h3>
-            <ul class="footer-links">
-              <li>
-                <a href="mailto:hello@luxewander.com">hello@luxewander.com</a>
-              </li>
-              <li><a href="#">Collaborations</a></li>
-              <li><a href="#">Newsletter</a></li>
-            </ul>
+    <footer>
+      <div class="footer-container">
+        <div class="footer-section">
+          <h3>LUXE & WANDER</h3>
+          <p style="color: #ccc; font-size: 0.9rem; line-height: 1.6">
+            Curated travel for women who appreciate the art of understated
+            luxury. For those who find elegance in simplicity and beauty in
+            authenticity.
+          </p>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-pinterest"></i></a>
+            <a href="#"><i class="fab fa-tiktok"></i></a>
           </div>
         </div>
-        <div class="copyright">
-          <p>
-            &copy; 2023 Luxe & Wander. Designed for the ambitious woman who
-            wants it all.
-          </p>
+        <div class="footer-section">
+          <h3>EXPLORE</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#hotels">Luxury Stays</a></li>
+            <li><a href="index.html#guides">City Guides</a></li>
+            <li><a href="index.html#travel-tips">Travel Tips</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>CONNECT</h3>
+          <ul>
+            <li><a href="mailto:hello@luxewander.com">Newsletter</a></li>
+            <li><a href="#">Collaborations</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="index.html#about">About</a></li>
+          </ul>
         </div>
       </div>
+      <div class="copyright">
+        <p>
+          &copy; 2023 Luxe & Wander. For the discerning traveler who values
+          substance over status.
+        </p>
+      </div>
     </footer>
+
+    <script>
+      function toggleExpandable(id) {
+        const content = document.getElementById(id);
+        const header = content.previousElementSibling;
+
+        content.classList.toggle("active");
+        header.classList.toggle("active");
+
+        // Toggle icon
+        const icon = header.querySelector("i");
+        if (content.classList.contains("active")) {
+          icon.classList.remove("fa-chevron-down");
+          icon.classList.add("fa-chevron-up");
+        } else {
+          icon.classList.remove("fa-chevron-up");
+          icon.classList.add("fa-chevron-down");
+        }
+      }
+
+      // Open first expandable by default
+      document.addEventListener("DOMContentLoaded", function () {
+        toggleExpandable("essentials");
+      });
+    </script>
   </body>
 </html>
